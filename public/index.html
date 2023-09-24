@@ -1,50 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
 <head>
-  <title>Login</title>
+  <title>MW//L Logística</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="main-login">
-    <div class="left-login">
-      <h1 class="h-one">Seja bem-vindo!</h1>
-      <h2 class="h-two">Ao melhor sistema de Controle De Estoque</h2>
-      <img src="img.jpg" alt="logo" class="image-login-left"> 
-    </div>
-    <div class="loginbox">
-      <form class="form-vertical">
-        <div class="d-flex flex-colunm">
-          <div class="right-login">
-            <div class="container">
-              <div class="card">
-                <div class="content"> 
-                  <div class="newlog">
-                    <img src="img.jpg" alt="logo">
-                  </div>
-                  <div class="input-field">
-                    <label class="fas fa-user" name="username"></label>
-                    <input id="username" name="username" type="text" placeholder="Usuario">
-                  </div>
-                  <div class="input-field">
-                    <label class="fas fa-lock" name="senha"></label>
-                    <input id="senha" name="senha" type="password" placeholder="Senha">
-                  </div>
-                  <div class="center">
-                    <button id="btn-acessar">ACESSAR</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+  <header>
+    <h1>MW//L Logística</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Estoque</a>
+      <a href="#">Vendas</a>
+      <a href="#">Relatórios</a>
+      <a href="#">Financeiro</a>
+      <a href="#">Configurações</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="img.jpg" alt="logo">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <label for="username">Usuário:</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login">
       </form>
-    </div>
-  </div>
-  
- 
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023 MW//L Logística</p>
+  </footer>
 </body>
-
 </html>
