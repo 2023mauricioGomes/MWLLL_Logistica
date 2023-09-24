@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="pt-br">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <div class="main-login">
+    <div class="left-login">
+      <h1 class="h-one">Veja bem-vindo</h1>
+      <h2 class="h-two">Ao melhor sistema de Controle De Estoque</h2>
+      <img src="img.jpg" alt="logo" class="image-login-left"> 
+    </div>
+    <div class="loginbox">
+      <form class="form-vertical">
+        <div class="d-flex flex-colunm">
+          <div class="right-login">
+            <div class="container">
+              <div class="card">
+                <div class="content"> 
+                  <div class="newlog">
+                    <img src="img.jpg" alt="logo">
+                  </div>
+                  <div class="input-field">
+                    <label class="fas fa-user" name="username"></label>
+                    <input id="username" name="username" type="text" placeholder="Usuario">
+                  </div>
+                  <div class="input-field">
+                    <label class="fas fa-lock" name="senha"></label>
+                    <input id="senha" name="senha" type="password" placeholder="Senha">
+                  </div>
+                  <div class="center">
+                    <button id="btn-acessar">ACESSAR</button>
+                  </div>
+                </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+ 
+</body>
+
 </html>
