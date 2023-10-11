@@ -3,19 +3,18 @@
 <head>
   <title>MW//L Logística</title>
   <link rel="stylesheet" href="./style/App.css">
+
+  <script>
+    function redirectToNewPage() {
+      window.location.href = "new-page.html";
+    }
+    </script>
+    
 </head>
 <body>
   <header>
     <h1>MW//L Logística</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Estoque</a>
-      <a href="#">Vendas</a>
-      <a href="#">Relatórios</a>
-      <a href="#">Financeiro</a>
-      <a href="#">Configurações</a>
-      <a href="#">Sair</a>
-    </nav>
+
   </header>
   <main>
     <section>
@@ -26,7 +25,7 @@
         <input type="text" name="username" id="username">
         <label for="password">Senha:</label>
         <input type="password" name="password" id="password">
-        <input type="submit" value="Login">
+        <a href="#" onClick="redirectToNewPage()">Login</a>
       </form>
     </section>
   </main>
