@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="/login" method="post">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Login">
+    </form>
+    <a href="/forgot-password">Forgot Password?</a>
+    <a href="/register">Register</a>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/estoque">Estoque</a></li>
+      <li><a href="/vendas">Vendas</a></li>
+      <li><a href="/relatórios">Relatórios</a></li>
+      <li><a href="/financeiro">Financeiro</a></li>
+      <li><a href="/configurações">Configurações</a></li>
+      <li><a href="/sair">Sair</a></li>
+    </ul>
+  </div>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .navbar {
+    position: fixed;

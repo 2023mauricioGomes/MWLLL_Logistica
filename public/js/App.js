@@ -1,7 +1,10 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Login from '../../src/components/Login';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +23,18 @@ function App() {
       </header>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/" exact component={Home} />
+        {/* Adicione outras rotas conforme necessário */}
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;
